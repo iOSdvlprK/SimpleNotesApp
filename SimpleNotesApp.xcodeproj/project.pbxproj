@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D834318D2A56CD14001D3F14 /* SimpleNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834318C2A56CD14001D3F14 /* SimpleNotesAppApp.swift */; };
-		D834318F2A56CD14001D3F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834318E2A56CD14001D3F14 /* ContentView.swift */; };
+		D834318F2A56CD14001D3F14 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834318E2A56CD14001D3F14 /* Home.swift */; };
 		D83431912A56CD16001D3F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83431902A56CD16001D3F14 /* Assets.xcassets */; };
 		D83431952A56CD16001D3F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83431942A56CD16001D3F14 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,10 +16,11 @@
 /* Begin PBXFileReference section */
 		D83431892A56CD14001D3F14 /* SimpleNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D834318C2A56CD14001D3F14 /* SimpleNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNotesAppApp.swift; sourceTree = "<group>"; };
-		D834318E2A56CD14001D3F14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D834318E2A56CD14001D3F14 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		D83431902A56CD16001D3F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83431922A56CD16001D3F14 /* SimpleNotesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleNotesApp.entitlements; sourceTree = "<group>"; };
 		D83431942A56CD16001D3F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D834319B2A56E032001D3F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +53,9 @@
 		D834318B2A56CD14001D3F14 /* SimpleNotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				D834319B2A56E032001D3F14 /* Info.plist */,
 				D834318C2A56CD14001D3F14 /* SimpleNotesAppApp.swift */,
-				D834318E2A56CD14001D3F14 /* ContentView.swift */,
+				D834318E2A56CD14001D3F14 /* Home.swift */,
 				D83431902A56CD16001D3F14 /* Assets.xcassets */,
 				D83431922A56CD16001D3F14 /* SimpleNotesApp.entitlements */,
 				D83431932A56CD16001D3F14 /* Preview Content */,
@@ -139,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D834318F2A56CD14001D3F14 /* ContentView.swift in Sources */,
+				D834318F2A56CD14001D3F14 /* Home.swift in Sources */,
 				D834318D2A56CD14001D3F14 /* SimpleNotesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +271,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleNotesApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleNotesApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
