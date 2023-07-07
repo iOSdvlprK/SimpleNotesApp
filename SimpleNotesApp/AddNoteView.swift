@@ -37,7 +37,6 @@ struct AddNoteView: View {
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//            request.addValue("application/json", forHTTPHeaderField: "Accept")
             
             let session = URLSession.shared
             let task = session.dataTask(with: request) { data, res, err in
