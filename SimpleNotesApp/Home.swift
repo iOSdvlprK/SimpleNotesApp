@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct Home: View {
+    @State var notes = [Note]()
+    
     var body: some View {
         NavigationView {
-            List(0..<9) { i in
-                Text("We are at \(i)")
+            List(self.notes) { note in
+                Text(note.note)
                     .padding()
             }
             .onAppear(perform: {
@@ -32,7 +34,15 @@ struct Home: View {
         let task = URLSession.shared.dataTask(with: url) { data, res, err in
             guard let data = data else { return }
             
-            print(String(data: data, encoding: .utf8) ?? "")
+//            print(String(data: data, encoding: .utf8) ?? "")
+            do {
+                let notes = try JSONDecoder().decode([Note].self, from: data)
+//                print(notes)
+                self.notes = notes
+            }
+            catch {
+                print(error)
+            }
         }
         
         task.resume()
