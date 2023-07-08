@@ -12,6 +12,7 @@
 		D83431912A56CD16001D3F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83431902A56CD16001D3F14 /* Assets.xcassets */; };
 		D83431952A56CD16001D3F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83431942A56CD16001D3F14 /* Preview Assets.xcassets */; };
 		D834319D2A583E13001D3F14 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834319C2A583E13001D3F14 /* AddNoteView.swift */; };
+		D834319F2A5986A1001D3F14 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834319E2A5986A1001D3F14 /* UpdateNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D83431942A56CD16001D3F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D834319B2A56E032001D3F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D834319C2A583E13001D3F14 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		D834319E2A5986A1001D3F14 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				D834319B2A56E032001D3F14 /* Info.plist */,
 				D834318C2A56CD14001D3F14 /* SimpleNotesAppApp.swift */,
 				D834318E2A56CD14001D3F14 /* Home.swift */,
+				D834319E2A5986A1001D3F14 /* UpdateNoteView.swift */,
 				D834319C2A583E13001D3F14 /* AddNoteView.swift */,
 				D83431902A56CD16001D3F14 /* Assets.xcassets */,
 				D83431922A56CD16001D3F14 /* SimpleNotesApp.entitlements */,
@@ -147,6 +150,7 @@
 				D834319D2A583E13001D3F14 /* AddNoteView.swift in Sources */,
 				D834318F2A56CD14001D3F14 /* Home.swift in Sources */,
 				D834318D2A56CD14001D3F14 /* SimpleNotesAppApp.swift in Sources */,
+				D834319F2A5986A1001D3F14 /* UpdateNoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

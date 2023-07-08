@@ -1,38 +1,40 @@
 //
-//  AddNoteView.swift
+//  UpdateNoteView.swift
 //  SimpleNotesApp
 //
-//  Created by joe on 2023/07/07.
+//  Created by joe on 2023/07/08.
 //
 
 import SwiftUI
 
-struct AddNoteView: View {
-    @State private var text = ""
+struct UpdateNoteView: View {
+    @Binding var note: String
+    @Binding var noteId: String
     
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         HStack {
-            TextField("Write a note...", text: $text)
+            TextField("Update a note...", text: $note)
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 .clipped()
             
-            Button(action: postNote) {
-                Text("Add")
+            Button(action: updateNote) {
+                Text("Update")
             }
             .padding(8)
         }
     }
     
-    func postNote() {
-        let url = URL(string: "http://localhost:3000/notes")!
+    private func updateNote() {
+        print("UPDATE")
+        let url = URL(string: "http://localhost:3000/notes/\(noteId)")!
         
         
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "PATCH"
         
-        let params = ["note": text] as [String: Any]
+        let params = ["note": note] as [String: Any]
         
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
@@ -55,7 +57,7 @@ struct AddNoteView: View {
             
             task.resume()
             
-            self.text = ""
+            self.note = ""
             presentationMode.wrappedValue.dismiss()
         }
         catch let err {
@@ -64,8 +66,10 @@ struct AddNoteView: View {
     }
 }
 
-struct AddNoteView_Previews: PreviewProvider {
+/*
+struct UpdateNoteView_Previews: PreviewProvider {
     static var previews: some View {
-        AddNoteView()
+        UpdateNoteView()
     }
 }
+*/
